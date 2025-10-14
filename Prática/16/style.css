@@ -1,0 +1,41 @@
+@charset "UTF-8"; 
+
+body {
+    background: linear-gradient( to  right, rgb(23, 119, 106), rgb(2, 250, 229), rgb(31, 65, 62)); 
+    
+}
+
+.a {
+        background-color: blue;
+        color: white;
+}
+.b {
+     background-color: #ff5e00  ;
+     color: #ffffff;
+}
+
+.c {
+     background-color: rgb(8, 78, 241);
+     color: rgb(252, 252, 252);
+}
+
+.d {   
+    background-color: hsl(10, 40%, 70%);
+}
+
+.e {
+     background-color: hsla(0, 50%, 90%, 85%); 
+}
+
+.f {
+    background-color: rgba(100, 50, 70, 92%);
+} 
+
+.g a {
+       background-color: #0e4472; 
+       text-decoration: none;
+       color:#e1e6eb ; 
+
+       
+       
+}

@@ -1,0 +1,121 @@
+@charset "UTF-8"; 
+
+body{
+      background-color: gray;
+      color: rgb(8, 8, 8);
+      font: normal normal 16px arial, sans serif;
+      
+} 
+
+a {
+     text-decoration: none;
+     color: rgb(10, 10, 10);
+     text-decoration: underline;
+} 
+
+a:hover {
+         color: rgb(39, 43, 255)
+} 
+
+a:active {
+       color: rgb(248, 244, 7);
+} 
+
+a:visited {
+            color: rgb(77, 2, 80) ;
+}
+
+a.w::before {
+          content: '❤️';
+}
+
+a.s::before {
+     content: '🌪️';
+}
+
+a.x::before {
+    content: '🔥';
+}
+
+
+p {
+    text-align: justify;
+}
+
+.superman:hover {
+            color: red;
+}
+
+.superman:active {
+     color: rgb(109, 21, 21);
+}
+
+.superman:visited {
+             text-decoration: line-through;
+             
+}
+
+.superman::after {
+     content: ' 💪🏻';
+}
+
+.metropolis > p {
+     display: none;
+}
+
+.metropolis:hover > p {
+    display: block;
+    color: white;
+    font-style: italic;
+}
+
+.batman:hover {
+    color: rgb(28, 81, 255);
+}
+
+.batman:active {
+    color: rgb(1, 15, 78);
+}
+
+.batman:visited {
+    text-decoration: line-through;
+}
+
+.batman::after {
+    content: ' 🧠';
+}
+
+.gothamcity > p {
+     display: none;
+}
+
+.gothamcity:hover > p {
+    display: block;
+    color: white;
+}
+
+.arqueiro:hover {
+    color: rgb(2, 255, 2);
+}
+
+.arqueiro:active {
+       color:rgb(1, 71, 1) ;
+}
+
+.arqueiro:visited {
+    text-decoration: line-through;
+}
+
+.arqueiro::after {
+    content: ' 🏹';
+} 
+
+.starcity > p {
+    display: none;
+}
+
+.starcity:hover > p {
+    display: block;
+    color: white;
+}
+

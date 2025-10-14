@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+@font-face {                  
+    font-family: 'Bebas Neue' ;
+    src: url(Fonts/BebasNeue-Regular.otf) format('opentype'),
+         url(Fonts/BebasNeue-Regular.ttf) format('truetype'); 
+    font-weight: bolder;
+    font-style: normal;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --cor00:white;
+    --cor01: red;
+    --cor02:blue;
+
+    --fontenormal: arial, sans-serif ;
+    --fonteprincipal:'Bebas Neue';
+    --fontesegunda: ;
+
+}
+
+body { 
+      width: 100%;
+      font:normal 400 16px var(--fontenormal) ;
+      background-color: rgb(1, 119, 253);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+h1 { 
+    font-family: var(--fonteprincipal);
+    letter-spacing: 2.5px;
+    font-size: 28px;
+    background-color: #339be0 ; 
+    color: white;
+    display: inline-block;
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+h1 > img {
+         vertical-align: middle;
+         max-width: 200px;
+
+}
+
+nav {
+     display: flex;
+     gap: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 5px;
+    
+}
+
+nav > a:hover {
+    background-image: linear-gradient(to right, black,#339be0 );
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+main {
+ width: 75%;
+ margin: auto;
+ text-align: center;
+ margin-top: 24px;
+}
+
+main  h2 {
+       padding: 10px;
+       
+}
+
+main p {
+    padding: 10px;
+}
+
+div.video {  
+    background-color: rgba(5, 236, 253, 0.397);
+    width: 60%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    top: 10px;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+div.video > iframe {
+        position: absolute;
+        top: 1.5%;
+        left: 1.5%;
+        width: 97%;
+        height: 97%;
+}
+
+aside {
+        width: 75%;
+        margin: auto ;
+        text-align: center;
+        margin-top: 24px;
+}
+
+aside > h3 {
+    text-align: left;
+    padding: 10px;
+}
+
+aside p {
+      padding: 5px;
+      line-height: 25px;
+      text-align: justify;
+      text-indent: 15px;
+}
+
+footer {
+        width: 100%;
+        margin: auto ;
+        text-align: center;
+        margin-top: 24px;
+}
+
+footer > p {
+              background-color: black;
+              color: white;
+              padding: 10px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    color: rgb(15, 15, 15);
+    text-decoration: underline;
+}
+
+
+
