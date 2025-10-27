@@ -20,12 +20,19 @@
             
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
 
-        thead {
-            background-color: gray;
+        thead, tfoot {
+            background-color: rgb(75, 73, 73);
             color: white;
         }
     </style>
@@ -47,8 +54,8 @@
             <caption>População das Unidades federativas</caption>
             <thead> 
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
 
@@ -188,15 +195,12 @@
             <td class="num">738 772</td>
            </tr>
 
-
-
-
             </tbody>
 
             <tfoot>
            <tr>
-            <th>Total de Habitantes</th>
-            <td class="num"><strong>210.147.125</strong></td>
+            <th scope="row">Total de Habitantes</th>
+            <td scope="row" class="num"><strong>210.147.125</strong></td>
            </tr>
             </tfoot>
 
