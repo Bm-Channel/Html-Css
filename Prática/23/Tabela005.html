@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style> 
+        *, html, body {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font: normal 400 19px arial, sans-serif, cursive;
+        }
+
+        table {
+            width: 30vw;
+            height: 100px;
+            border-collapse: collapse;
+            margin: 50px;
+            text-align: center;
+            box-shadow: inset 1px 1px 1px 1px rgb(0, 0, 0);
+        }
+
+        caption {
+            border: 2.5px solid rgb(12, 12, 12);
+            padding: 5px;
+            text-transform: uppercase;
+            background-image: linear-gradient(to right, rgb(52, 114, 133), transparent);
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            font: normal 700 21px Tahoma;
+            vertical-align: middle;
+            
+        }
+
+        td {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+        }
+
+        col.nome {
+            background-color:#8ffc02;
+        }
+
+        col.idade { 
+                  background-color: #f1f080;
+        }
+
+        col.profissão {
+            background-color: #ace7aa;
+        }
+
+        col.motivações {
+            background-color: #9ae9e9;
+        }
+
+        thead tr {
+            color: white;
+            background-color: #3E591B;
+        }
+
+        tfoot tr {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <table>
+        <colgroup>
+            <col class="nome">
+            <col class="idade">
+            <col class="profissão">
+            <col class="motivações" span="2">
+        </colgroup>
+        
+        <caption>cadastro evolution</caption>
+        
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Nome</th>
+                <th scope="col" rowspan="2">Idade</th>
+                <th scope="col" rowspan="2">Profissão</th>
+                <th scope="colgroup" colspan="2">Motivações</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Primeira</th>
+                <th scope="col">Segunda</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Bruno Oliveira</td>
+                <Td>20 anos</Td>
+                <td>Vendedor</td>
+                <td>Legado</td>
+                <td>Família</td>
+            </tr>
+
+            <tr>
+                <td>Marcos Silvester</td>
+                <td>35 anos</td>
+                <td>Pedreiro</td>
+                <td>Filhos</td>
+                <td>Aposentadoria</td>
+            </tr>
+
+            <tr>
+                <td>Guilherme</td>
+                <td>30 anos</td>
+                <td>Detetive</td>
+                <td>Família</td>
+                <td>Paz</td>
+            </tr>
+
+            <tr>
+                <td>Fernando</td>
+                <td>45 anos</td>
+                <td>Policial</td>
+                <td>Superação</td>
+                <td>Prosperidade</td>
+            </tr>
+
+            <tr>
+                <td>Gaby</td>
+                <td>20 anos</td>
+                <td>Estudante</td>
+                <td>História de Vida</td>
+                <td>Filha</td>
+            </tr>
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="5">Resultado</th>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
