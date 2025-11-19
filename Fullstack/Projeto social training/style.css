@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*, html, body {
+              margin: 0;
+              padding: 0;
+              height: 100vh;
+}
+
+body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-image: url(imagens/epic.png), linear-gradient(to right, rgb(250, 82, 236), rgb(250, 144, 5));
+     background-repeat: no-repeat;
+     background-size:  cover;
+     background-position: top center ;
+     background-blend-mode: hard-light;
+}
+
+main {
+    position: relative;
+    width: 100vw;
+}
+section#iphone {
+    position: absolute;
+     top: 50%;
+     left: 50% ;
+     transform: translate(-50%, -50%);
+     
+     height: 403px;
+     aspect-ratio: 200 / 403;
+
+    background-image: url(imagens/frame-iphonexx.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+iframe#tela {
+    position: relative;
+    top: 13%;
+    left: 7%;
+    width: 172px ;
+    height: 302px;
+}
+
+section#rede {
+    text-align:center;
+}
+
+section#rede img {
+     margin: 10px;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     box-sizing: border-box;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+}
+
+section#rede img:hover {
+       border: 2px solid rgba(255, 255, 255, 0.616);
+       transform: translate(-3%, -3%);
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+       transition: transform 0.2s, border 1s;
+}  
