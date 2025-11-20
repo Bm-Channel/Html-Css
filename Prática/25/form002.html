@@ -7,16 +7,27 @@
 </head>
 <body>
        <h1>Teste de Formulários</h1>
-       <form autocomplete="on"  action="cadastro.php" method="post">
+       <form action="cadastro.php"  method="post" autocomplete="on">
         <p> 
             <label for="iusu">Usuário:</label>
-            <input type="usu" name="" id="iusu">
+            <input type="text" name="iusu" id="iusu" autocomplete="username" minlength="6" maxlength="8" size="20" placeholder="nome do usuário">
+        </p>
+
+        <p>
+            <label for="semail">Email:</label>
+            <input type="email" name="email" id="semail">
+
         </p>
 
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen">
+            <input type="password" name="sen" id="isen" autocomplete="current-password" 
+            pattern=".*\d.*"
+            title="Pelo menos um número">
+            
         </p>
+
+        
 
         <p>
              <input type="submit" value="Enviar">
