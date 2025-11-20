@@ -4,19 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segundo Formulário</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(162, 240, 240);
+            font-size: large;
+        }
+
+        form {
+            border: 5px solid black;
+            padding: 20px;
+            display: table;
+        }
+
+        p {
+            margin: 15px;
+            display: table;
+            border: 3px solid black;
+        }
+  
+    </style>
 </head>
 <body>
-        <form action="php.cadastro" method="post">
+    <h1>Meu Segundo Formulário</h1>
+        <form action="#" method="post">
 
-            <p>Nome: <input type="text" name="nome" id="nome"></p>
-            <p>Sobrenome: <input type="text" name="subname" id="subname"></p>
-            <p>Email: <input type="email" name="email" id="email"></p>
-
-
-
-
-
-
+            <p>Nome: <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required></p>
+            <p>Sobrenome: <input type="text" name="subname" id="subname" placeholder="Digite seu sobrenome" required></p>
+            <p>Email: <input type="email" name="email" id="email" placeholder="Digite seu email" required></p>
+            <p>Senha: <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required></p>
+            <p>
+              <input type="radio" name="groups" 
+                 value="M" required > Masculino 
+              <input type="radio" name="groups" 
+                 value="F" required> Feminino
+            </p>
+            <input type="submit" value="Enviar">
         </form>
 </body>
 </html>
