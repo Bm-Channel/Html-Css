@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset.three {
+                     padding: 10px;
+                     margin-top: 7px;
+        }
+    </style>
+</head>
+<body>
+       <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+             <label for="nameb"> Nome
+             <input type="text" name="name" id="nameb" autocomplete="on">
+             </label> <br>
+
+             <label for="idadeb"> Idade
+             <input type="text" name="idade" id="idadeb" autocomplete="on">
+             </label> <br>
+
+             <p> <label for="masc">Sexo</label>
+                    <input type="radio" name="sexo" id="masc" value="M" checked> 
+                    <label for="">Masculino</label>
+                    <input type="radio" name="sexo" id="fem" value="F"> 
+                    <label for="">Feminino</label> 
+             </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favoritos</legend>
+            
+            <label for="madrid">Real Madrid</label>
+            <input type="checkbox" name="real" id="madrid" checked> 
+            
+            <label for="lona">Barcelona</label>
+            <input type="checkbox" name="barc" id="lona"> <br>
+
+            <label for="ps">PS5</label>
+            <input type="checkbox" name="console" id="ps" checked> 
+
+            <label for="xb">Xbox</label>
+            <input type="checkbox" name="xbox" id="xb"> <br>
+
+            <label for="wind">Windows</label>
+            <input type="checkbox" name="windows" id="wind" checked> 
+
+            <label for="li">Linux</label>
+            <input type="checkbox" name="linux" id="li">  <br>
+
+            <label for="pessi">Messi</label>
+            <input type="checkbox" name="messi" id="pessi">
+
+            <label for="cr7">Cr7</label>
+            <input type="checkbox" name="cristiano" id="cr7" value="Cristiano Ronaldo" checked> 
+
+        </fieldset>
+          
+        <fieldset class="three">
+            <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+        </fieldset>
+
+       </form>
+</body>
+</html>
