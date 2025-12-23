@@ -21,6 +21,15 @@
         width: 60vw;
         padding: 10px;
     }
+
+    div.pill {
+        padding-top: 19px;
+    }
+
+    div.ios {
+        padding-top: 10px;
+    }
+
 }
 
 
@@ -44,6 +53,14 @@
         float: left;
         width: 450px;
         padding: 10px;
+    }
+
+    div.pill {
+        padding-top: 15px;
+    }
+
+     div.ios {
+        padding-top: 10px;
     }
 
 }
