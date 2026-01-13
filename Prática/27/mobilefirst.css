@@ -3,7 +3,7 @@
 /* Mobile First */
 
 .conteiner {
-            background-color: rgb(103, 205, 245);
+            background-color: rgb(250, 240, 94);
             display: flex;
             flex-direction: column;
         }
@@ -13,9 +13,33 @@
             border: 1px solid black;
         }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width:920px)
+/*Tablet*/
+
+{  
     .conteiner {
         flex-direction: row;
+        background-color: rgba(250, 30, 30, 0.829);
         /* ou row */
     }
-}        
+}
+
+@media screen and (min-width:920px) 
+/*Desktop*/
+{
+    .conteiner {
+        flex-direction: column;
+        background-color: rgb(116, 116, 116);
+        color: white;
+        
+    }
+
+    div.item {
+            flex: auto;
+            border: 2px solid rgb(29, 29, 29);
+            padding: 5px;
+        }
+
+    
+}
+
