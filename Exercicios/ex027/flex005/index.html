@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-image: url(img/1328396.png);
+            height: 100vh;
+            width: 100vw;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section {
+            background-color: rgb(164, 235, 231);
+            height: 200px;
+            width: 200px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Privo</h1>
+        </section>
+
+        <section>
+            <h1>Bilhão</h1>
+        </section>
+
+        <section>
+            <h1>Abudhabi</h1>
+        </section>
+
+    </main>
+</body>
+</html>
