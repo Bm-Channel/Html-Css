@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        main {
+            background-color: rgb(63, 63, 63);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center ;
+            height: 400px;
+            align-content: center                                                                                                                                                                                                            ;
+        }
+
+        div {   border: 1px solid rgb(255, 255, 255);
+                padding: 10px;
+                
+                
+        }
+
+        div#i {
+            order: 3;
+            align-self:self-end;
+        }
+
+        div#j {
+            order: 2;
+        }
+
+    </style>
+</head>
+<body>
+      <main>
+        <div id="i">Dezembro</div>
+        <div id="j">Janeiro</div>
+        <div id="03">Fevereiro</div>
+      </main>
+</body>
+</html>
